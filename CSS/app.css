@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url('../img/img_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* navbar style */
+nav {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    padding-inline: 10rem;
+    width: 100%;
+    position: sticky;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 4rem;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 0rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: gray;
+    transition: all 0.2s ease-in-out;
+
+}
+
+nav ul li a:hover {
+    color: black;
+
+}
+
+/* jumbotron style */
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron p {
+    color : #fff;
+    font-weight: 500;
+    width: 40%; 
+    text-align: center;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+}
+
+/* Main Content */
+
+main {
+    margin-block: 2rem;
+    padding-inline: 3rem;
+    width: 100%;
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+/* article */
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-block: 3rem;
+}
+
+article .article-image {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+article h1 {
+    margin: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* aside */
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    background-color: lightcyan;
+}
